@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+body { 
+  background-color: #292929;
+}
+
+h1 {  
+  font-size: 150%;
+  padding: 0.25em .5em;  
+  font-family: 'Cairo', sans-serif;
+}
+
+h1 span {
+  color: aliceblue;
+  border: 1px solid hsla(208, 100%, 97.1%, .2);
+  padding: 0.1em .2em;  
+}
+
+.icons { 
+  display: inline-block;
+  width: 148px;
+  height: 564px;
+  overflow: hidden;
+  background: rgb(255, 255, 255) url(sprite5v1.png) repeat-y;
+  will-change: backgroundPosition;
+  transition: 0.3s background-position ease-in-out;
+  padding: 0 0px;
+  transform: translateZ(0);
+}
+
+.icons:nth-child(2) {
+  margin: 0 10px;
+}
+
+* { box-sizing: border-box; }
+
+.spinner-container {
+  overflow: hidden;
+  height: 632px;  
+  padding: 2em;
+  display: flex;
+  transform: translate(-50%, -50%) scale(.90, .90); /*escale era 0.62*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: 0.3s transform;
+}
+
+.app-wrap.winner-false {
+  animation: linear 1s spin;
+}
+
+.spinner-container::after {
+  position: absolute;
+  border: rgb(191, 228, 167);
+  border-style: solid;
+  border-width: 3px;
+  content: '';
+  display: block;
+  height: 180px;
+  font-size: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+  left: 30px;
+  background: rgba(255, 255, 255, 0.144);  
+}
+
+
+.button-container{
+  margin-top: 50px;
+  overflow: hidden;
+  border-radius: 20px;
+  width: 180px;
+  height: 20px;
+  padding: 2em;
+  display: flex;
+  transform: translate(-50%, -50%) scale(.90, .90); /*escale era 0.62*/
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  font-size: medium;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  transition: 0.3s transform;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  align-items: center;
+  background: rgb(245, 173, 17);
+}
+
+
+.text-container{
+  overflow: hidden;
+  display: flex;
+  transform: translate(-50%, -50%) scale(.90, .90); /*escale era 0.62*/
+  position: absolute;
+  top: 10%;
+  left: 52%;
+  transition: 0.3s transform;
+  color:whitesmoke;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: x-large;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-match-container{
+  margin-top: 50px;
+  overflow: hidden;
+  border-radius: 20px;
+  width: 300px;
+  height: 20px;
+  padding: 2em;
+  display: flex;
+  transform: translate(-50%, -50%) scale(.90, .90); /*escale era 0.62*/
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transition: 0.3s transform;
+  font-weight:800;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  align-items: center;
+  text-align-last: center;
+  background: rgba(42, 204, 36, 0.644);
+}
+
+.gradient-fade {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  bottom: 32px;
+  left: 32px;
+  background: linear-gradient(
+    to bottom, 
+    rgba(64,64,64,1) 0%, 
+    rgba(64,64,64,0) 7%, 
+    rgba(64,64,64,0) 93%, 
+    rgba(64,64,64,1) 100%
+  );
+}
+
+@media screen and (max-width: 1000px) {
+  .spinner-container {
+    transform: translate(-50%, -50%) scale(.86, .86);
+  }
+  .text-container{
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .spinner-container {
+    transform: translate(-50%, -50%) scale(.70, .70);
+
+  }
+  .text-container{
+    font-size: large;
+  }
+}
