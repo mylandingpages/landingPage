@@ -22,8 +22,7 @@ export default class SlotMachine extends React.Component {
   }
 
   goOfferURL() {
-    console.log('WTF')
-    window.location.href='http://www.google.com'
+    window.location.href='https://track.followyourtrack.site/click?pid=1387&offer_id=4436&sub2={clickId}'
   }
   static loser = [
     'Hey, you lost!',
@@ -68,12 +67,12 @@ export default class SlotMachine extends React.Component {
 
     return (
       <>
-      <div className={`text-container`} onClick={this.handleClick}>JUEGA en la ruleta para conocer a una de estas chicas en nuestra web!</div>
+      <div className={`text-container`} onClick={this.handleClick}>PLAY roulette to meet one of these girls in our website!</div>
         <div className={`spinner-container`}>
           <Spinner onFinish={this.finishHandler} ref={(child) => { this._child1 = child; }} timer="1000" />
           <div className="gradient-fade"></div>
         </div>
-        {(firstLoad == 0 || objecSelected == 0) ? <button className={`button-container`} onClick={this.handleClick}>ELEGIR CHICA</button> : <button className={`text-match-container`} onClick={this.goOfferURL}>Para ver más fotos...<br/>CLICK AQUÍ!</button>}
+        {(firstLoad == 0 || objecSelected == 0) ? <button className={`button-container`} onClick={this.handleClick}>CHOOSE GIRL</button> : <button className={`text-match-container`} onClick={this.goOfferURL}>To see more photos ...<br/>CLICK HERE!</button>}
       </>
     );
   }
@@ -163,7 +162,6 @@ class Spinner extends React.Component {
   componentDidMount() {
 
     if (firstLoad != 0) {
-      console.log('SETUP SECOND TIME')
       console.log(firstLoad)
     clearInterval(this.timer);
 
@@ -178,7 +176,6 @@ class Spinner extends React.Component {
 
   } else {
 
-    console.log('SETUP FIRST TIME')
     console.log(firstLoad)
     firstLoad++
 
