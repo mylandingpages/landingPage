@@ -22,7 +22,7 @@ export default class SlotMachine extends React.Component {
   }
 
   goOfferURL() {
-    window.location.href='https://track.followyourtrack.site/click?pid=1387&offer_id=4436&sub2={clickId}'
+    window.location.href='https://3hexx.bemobtrcks.com/click'
   }
   static loser = [
     'Hey, you lost!',
