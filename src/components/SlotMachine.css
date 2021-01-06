@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cairo');
+/* @import url('https://fonts.googleapis.com/css?family=Cairo');
 
 @keyframes spin {
   to {
@@ -45,7 +45,7 @@ h1 span {
   height: 632px;  
   padding: 2em;
   display: flex;
-  transform: translate(-50%, -50%) scale(.90, .90); /*escale era 0.62*/
+  transform: translate(-50%, -50%) scale(.90, .90); 
   position: absolute;
   top: 50%;
   left: 50%;
@@ -81,7 +81,7 @@ h1 span {
   height: 20px;
   padding: 2em;
   display: flex;
-  transform: translate(-50%, -50%) scale(.90, .90); /*escale era 0.62*/
+  transform: translate(-50%, -50%) scale(.90, .90); 
   position: absolute;
   top: 80%;
   left: 50%;
@@ -99,7 +99,7 @@ h1 span {
 .text-container{
   overflow: hidden;
   display: flex;
-  transform: translate(-50%, -50%) scale(.90, .90); /*escale era 0.62*/
+  transform: translate(-50%, -50%) scale(.90, .90); 
   position: absolute;
   top: 10%;
   left: 52%;
@@ -119,7 +119,7 @@ h1 span {
   height: 20px;
   padding: 2em;
   display: flex;
-  transform: translate(-50%, -50%) scale(.90, .90); /*escale era 0.62*/
+  transform: translate(-50%, -50%) scale(.90, .90); 
   position: absolute;
   top: 80%;
   left: 50%;
@@ -164,4 +164,4 @@ h1 span {
   .text-container{
     font-size: large;
   }
-}
+} */
