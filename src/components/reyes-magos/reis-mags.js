@@ -1,7 +1,7 @@
 import React from 'react';
 import './reyes-magos.scss';
 import ImageRM from './reyes-magos.jpg' 
-import ImageM from './mochila.png'
+import ImageM from './mochila.jpg'
 
 export default function ReyesMagosMain() {
       return (
