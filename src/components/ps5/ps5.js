@@ -1,6 +1,6 @@
 import React from 'react';
 import ImageR from './ps5.jpg';
-import ImageRPS5 from './ps5img.jpg';
+import ImageRPS5 from './ps5im.jpg';
 import './ps5.scss';
 
 export default function Ps5Main() {
