@@ -7,24 +7,24 @@ $text-margin: 10px;
     height: 100%;
     width: 100%;
     margin: 0;
-    background: rgb(209, 182, 214);
+    background: rgb(55, 52, 56);
     font-family: $main-font;
     position: absolute;
     box-sizing: border-box;
 }*/
-.page-container {
+.page-container-2 {
             position: relative;
             width: 100%;
             height: 100%;
             display: block;
             perspective: 1000px;
 }
-            .card-container {
-                height: 350px;
+            .card-container-2 {
+                height: 385px;
                 margin: 0;
                 padding: 0;
                 top: 20px;
-                width: 330px;
+                width: 350px;
                 margin-inline: auto;
                 //margin-left: 35%;
               //margin-right: 35%;
@@ -66,17 +66,19 @@ $text-margin: 10px;
                     transform: rotateY(-180deg);
                     padding: 20px;
                     font-size: 20px;
+                    text-align: center;
                     /* back tile styles go here! */
                 }
                 .image-container {
                     position: relative;
                 }
                     .card-image {
-                        width: 100%;
+                        //width: 100%;
+                        align-items: center;
                         border-radius: 10px;
                     }
                     .card-image-2 {
-                        width: 90%;
+                        //width: 90%;
                         border-radius: 10px;
                     }
                     .title {
@@ -118,7 +120,16 @@ $text-margin: 10px;
                             text-overflow: ellipsis;
                         }
                     
-                
+                .bttn{
+                    background:    #15d798;
+border-radius: 11px;
+padding:       16px 28px;
+color:         #ffffff;
+display:       inline-block;
+font:          normal bold 20px/1 "Open Sans", sans-serif;
+text-align:    center;
+border-color: whitesmoke;
+                }
             
         
         footer {
