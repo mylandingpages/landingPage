@@ -83,7 +83,7 @@ const Hero = ({
                   <Button tag="a" color="primary" wideMobile href="https://calientamanos.es/">
                     Más info
                     </Button>
-                  <Button tag="a" color="custom" wideMobile href="https://amzn.to/398pS7B">
+                  <Button tag="a" color="custom" wideMobile href="https://calientamanos.es/">
                     COMPRAR YA!
                     </Button>
                 </ButtonGroup>
